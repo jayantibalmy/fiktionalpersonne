@@ -1,28 +1,78 @@
 @font-face {
     font-family: 'river';
-    src: url('./fonts/reverie-regular-personal-use-only-webfont.woff2') format('woff2'), /* Modern Browsers */
-         url('./fonts/reverie-regular-personal-use-only-webfont.woff') format('woff'); /* Legacy Browsers */
-    
-  }
-  ::-webkit-scrollbar{
+    src: url('./fonts/reverie-regular-personal-use-only-webfont.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('./fonts/reverie-regular-personal-use-only-webfont.woff') format('woff');
+    /* Legacy Browsers */
+}
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+
+::-webkit-scrollbar {
     width: 0;
 }
-#menu{
-    text-align: center;
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+*{
+    box-sizing: border-box;
 }
 
-h1{
+.logo{
+    position: fixed;
+    font-family: river;
+    font-size: 3vmax;
+}
+
+#main-container{
+    padding: 6%;
+}
+
+
+
+#menu h1 {
     font-size: 12vmax;
     font-family: river;
 }
 
-#menu a {
-    text-decoration: none;                                               
+#main-container a {
+    text-decoration: none;
     color: black;
 }
 
-.text-hover{
+.text-hover {
     opacity: 0.1;
     transition: opacity 0.7s ease-in-out;
+}
+.nav-links{
+    position: fixed;
+    bottom: 5vh;
+    font-family: river;
+}
+
+.line1{
+    font-style: italic;
+    font-size: 2vmax;
+    color: rgb(215, 208, 208);
+}
+.line2{
+    font-family: 'Cutive Mono', monospace;                                          
+}
+
+.nav-links{
+    display: flex;
+    gap: 2vw;
+    font-size: 1.5vmax;
+   
+}
+
+.nav-links a {
+    border-bottom: solid 2px white;
+}
+.nav-links a:hover{
+  border-bottom: solid 2px black;
 }
 
