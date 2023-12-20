@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'river';
+    src: url('./fonts/reverie-regular-personal-use-only-webfont.woff2') format('woff2'), /* Modern Browsers */
+         url('./fonts/reverie-regular-personal-use-only-webfont.woff') format('woff'); /* Legacy Browsers */
+    
+  }
+  ::-webkit-scrollbar{
+    width: 0;
+}
+#menu{
+    text-align: center;
+}
+
+h1{
+    font-size: 12vmax;
+    font-family: river;
+}
+
+#menu a {
+    text-decoration: none;                                               
+    color: black;
+}
+
+.text-hover{
+    opacity: 0.1;
+    transition: opacity 0.7s ease-in-out;
+}
+
