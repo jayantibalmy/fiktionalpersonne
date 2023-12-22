@@ -25,15 +25,20 @@ body{
     position: fixed;
     font-family: river;
     font-size: 3vmax;
+    top: 8vh;
 }
 
 #main-container{
     padding: 6%;
 }
+.hero{
+    position: absolute;
+    top: 5vh;
+    padding-bottom: 15vh;
 
-
-
+}
 #menu h1 {
+    
     font-size: 12vmax;
     font-family: river;
 }
@@ -45,7 +50,7 @@ body{
 
 .text-hover {
     opacity: 0.1;
-    transition: opacity 0.7s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 .nav-links{
     position: fixed;
@@ -66,7 +71,6 @@ body{
     display: flex;
     gap: 2vw;
     font-size: 1.5vmax;
-   
 }
 
 .nav-links a {
@@ -76,3 +80,90 @@ body{
   border-bottom: solid 2px black;
 }
 
+
+@media screen and (max-width: 768px) {
+    #menu-img img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #copy1 {
+        position: absolute;
+        top: -40vh;
+        left: 20vw;
+        width: 22vw;
+      }  
+      #copy2 {
+        position: absolute;
+        top: 20vh;
+        left: 80vw;
+        width: 22vw;
+      }
+      #copy3 {
+        position: absolute;
+        top: -40vh;
+        height: 30vh;
+        left: 40vw;
+      }
+
+    #photo1 {
+        position: absolute;
+        top: -80vh;
+        left: 27vw;
+        width: 18vw;
+      }
+       #photo2{
+        position: absolute;
+        top: -90vh;
+        left: 50vw;
+        width: 15vw;
+      }
+    
+      #photo3 {
+        position: absolute;
+        top: -30vh;
+        height: 20vh;
+        left: 40vw;
+      }
+       
+       #film1 {
+        position: absolute;
+        top: -80vh;
+        left: 40vw;
+        width: 19vw;
+      }
+       #film2{
+        position: absolute;
+        top: -40vh;
+        left: 26vw;
+        width: 14vw;
+      }
+     
+      #strategy1{
+        position: absolute;
+        top: -40vh;
+        left: 40vw;
+        width: 14vw;
+      }
+
+  
+      #strategy2{
+        position: absolute;
+        top: -80vh;
+        width: 13vw;
+        left: 25vw;
+      }
+  
+      #menu-img img{
+        display: none;
+        border-radius: 7%;
+    }
+  
+    /* hover image effect  */
+    .img-visibility {
+        display: block;
+        position: absolute;
+      
+      }
+}

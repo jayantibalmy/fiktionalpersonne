@@ -7,27 +7,46 @@ const elements = [photo, strategy, copy, film];
 
 // Function to handle mouseover and mouseout events
 function handleMouseEvents() {
-  elements.forEach(element => {
-    element.addEventListener('mouseover', handleHover);
+  elements.forEach((element, index) => {
+    element.addEventListener('mouseover', () => handleHover(index));
     element.addEventListener('mouseout', handleMouseOut);
   });
 }
 
 // Function to handle mouseover event
-function handleHover(event) {
-  const hoveredElement = event.target;
+function handleHover(index) {
+  elements.forEach((element, i) => {
+    const imgContainer = document.getElementById(`${element.id}-img`);
+    const images = imgContainer.getElementsByTagName('img');
 
-  elements.forEach(element => {
-    if (element !== hoveredElement) {
+    if (i !== index) {
       element.classList.add('text-hover');
+    } else {
+      element.classList.remove('text-hover');
+      imgContainer.classList.add('img-visibility');
+
+      // Add this loop to display images in the hovered container
+      for (let j = 0; j < images.length; j++) {
+        images[j].style.display = 'block';
+      }
     }
   });
 }
 
 // Function to handle mouseout event
 function handleMouseOut() {
-  elements.forEach(element => {
+  elements.forEach((element, index) => {
     element.classList.remove('text-hover');
+
+    const imgContainer = document.getElementById(`${element.id}-img`);
+    const images = imgContainer.getElementsByTagName('img');
+
+    imgContainer.classList.remove('img-visibility');
+
+    // Add this loop to hide all images when not hovered
+    for (let j = 0; j < images.length; j++) {
+      images[j].style.display = 'none';
+    }
   });
 }
 
