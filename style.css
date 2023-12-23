@@ -155,3 +155,26 @@ body {
       
       }
 }
+
+
+/* secondary page navigation bar  */ 
+#secondary-nav{
+    position: absolute;
+    top: 10vmax;
+}
+#secondary-nav a {
+    font-family: river;
+    font-size: 1.5vmax;
+   
+}
+#secondary-nav a:hover{
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#secondary-nav a.active {
+    /* text-decoration: underline; */
+    padding-bottom: .1rem;
+    border-bottom: solid 1px black
+    
+}
