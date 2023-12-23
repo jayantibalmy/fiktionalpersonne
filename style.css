@@ -1,44 +1,42 @@
 @font-face {
     font-family: 'river';
     src: url('./fonts/reverie-regular-personal-use-only-webfont.woff2') format('woff2'),
-        /* Modern Browsers */
-        url('./fonts/reverie-regular-personal-use-only-webfont.woff') format('woff');
-    /* Legacy Browsers */
+         url('./fonts/reverie-regular-personal-use-only-webfont.woff') format('woff');
 }
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 ::-webkit-scrollbar {
     width: 0;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-
 }
-*{
+
+* {
     box-sizing: border-box;
 }
 
-.logo{
+.logo {
     position: fixed;
     font-family: river;
     font-size: 3vmax;
     top: 8vh;
 }
 
-#main-container{
+#main-container {
     padding: 6%;
 }
-.hero{
+
+.hero {
     position: absolute;
     top: 5vh;
     padding-bottom: 15vh;
-
 }
+
 #menu h1 {
-    
     font-size: 12vmax;
     font-family: river;
 }
@@ -48,26 +46,23 @@ body{
     color: black;
 }
 
-.text-hover {
-    opacity: 0.1;
-    transition: opacity 0.3s ease-in-out;
+.line1 {
+    font-style: italic;
+    font-size: 2vmax;
+    color: rgb(215, 208, 208);
 }
-.nav-links{
+
+.line2 {
+    font-family: 'Cutive Mono', monospace;
+}
+
+.nav-links {
     position: fixed;
     bottom: 5vh;
     font-family: river;
 }
 
-.line1{
-    font-style: italic;
-    font-size: 2vmax;
-    color: rgb(215, 208, 208);
-}
-.line2{
-    font-family: 'Cutive Mono', monospace;                                          
-}
-
-.nav-links{
+.nav-links {
     display: flex;
     gap: 2vw;
     font-size: 1.5vmax;
@@ -76,13 +71,13 @@ body{
 .nav-links a {
     border-bottom: solid 2px white;
 }
-.nav-links a:hover{
-  border-bottom: solid 2px black;
+
+.nav-links a:hover {
+    border-bottom: solid 2px black;
 }
 
-
 @media screen and (max-width: 768px) {
-    #menu-img img{
+    #menu-img img {
         display: none;
     }
 }
@@ -94,18 +89,6 @@ body{
         left: 20vw;
         width: 22vw;
       }  
-      #copy2 {
-        position: absolute;
-        top: 20vh;
-        left: 80vw;
-        width: 22vw;
-      }
-      #copy3 {
-        position: absolute;
-        top: -40vh;
-        height: 30vh;
-        left: 40vw;
-      }
 
     #photo1 {
         position: absolute;
@@ -155,7 +138,7 @@ body{
         left: 25vw;
       }
   
-      #menu-img img{
+      #menu-img img {
         display: none;
         border-radius: 7%;
     }
