@@ -110,7 +110,7 @@ body {
     padding-top: 4%;                                                             
 }
 
-#bio-content div{
+#bio-content div , #contact-content div{
     font-size: 6vw;
     font-family: 'Poiret One', sans-serif;   
 
@@ -123,6 +123,28 @@ body {
 
 }
 
+/* contact page ----------------------------------*/
+#contact-content{
+    text-align: center;
+}
+#contact-content .title{
+    font-size: 3vmax;
+    font-family: 'Poiret One', sans-serif;   
+   margin-top: 1rem;
+
+
+}
+#contact-content a{
+   text-decoration: underline;
+   margin-top: 0.5rem;
+}
+#contact-content .socials{
+    display: flex;
+    flex-direction: column;
+    font-size: 2vmax;
+ 
+ }
+ 
 @media screen and (max-width: 768px) {
     #menu-img img {
         display: none;
@@ -133,7 +155,7 @@ body {
         top: 14vh;
     }
 
-    #bio-content {
+    #bio-content , #contact-content{
         padding-top: 20%;  
         padding-bottom: 10%;                                                      
     }
