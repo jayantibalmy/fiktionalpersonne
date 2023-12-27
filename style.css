@@ -105,6 +105,7 @@ body {
     border-bottom: solid 1px black
 }
 
+
 /* bio page ----------------------------------------- */
 #bio-content {
     font-family: 'Poiret One', sans-serif;
@@ -174,7 +175,7 @@ body {
     }
 
     #secondary-nav {
-        position: absolute;
+        position: fixed;
         top: 14vh;
     }
 
