@@ -184,7 +184,9 @@ body {
         padding-top: 20%;
         padding-bottom: 10%;
     }
-
+    #contact-content {
+        padding-top: 20vh;
+    }
     #film-content-toggle2 {
         display: flex;
         flex-direction: column;
@@ -274,6 +276,9 @@ body {
     #secondary-nav {
         position: absolute;
         top: 18vh;
+    }
+    #contact-content {
+        padding-top: 20vh;
     }
 
     #film-content-toggle {
