@@ -97,15 +97,15 @@ function replaceFilmContent(filmId) {
     case 'film-content-toggle1':
       filmContent.innerHTML = `
       <div class="toggle-content">
-      <h1 class="film-title">
-          The Tree and the Cat
-      </h1>
-      <div>
+      <div class="film-title">
+        <h3><a href="./film.html" id="film-link">Film/</a></h3>
+        <h1> The Tree and the Cat </h1>
+      </div>
+      <div> 
           <p>In 1983, a short animated film titled "The Tree and the Cat" was released. The tale revolves
               around a solitary tree that leads a contented life and decides to impart its wisdom to a cat.
               Despite the cat being initially rejected by a wagon, it eventually learns important life lessons
               from the wise tree.</p>
-
       </div>
       <div class="film-cred-vid">
           <div>
@@ -131,9 +131,10 @@ function replaceFilmContent(filmId) {
     case 'film-content-toggle2':
       filmContent.innerHTML = `
       <div "toggle-content">
-      <h1 class="film-title">
-          Wow, a talking fish!
-      </h1>
+      <div class="film-title">
+      <h3><a href="./film.html" id="film-link">Film/</a></h3>
+      <h1>WoW, a talking fish! </h1>
+    </div>
       <div>
           <p>Original title: Ух ты, говорящая рыба! (Ukh ty, govoryashchaya ryba!)</p>
           <p>Soviet animated short film called "Wow, a Talking Fish!" (Ух ты, говорящая рыба!) that tells the
@@ -169,9 +170,10 @@ function replaceFilmContent(filmId) {
     case 'film-content-toggle3':
       filmContent.innerHTML = `
       <div "toggle-content">       
-        <h1 class="film-title">
-            Priit Parn Ja teeb trikke
-        </h1>
+        <div class="film-title">
+        <h3><a href="./film.html" id="film-link">Film/</a></h3>
+        <h1>Priit Parn Ja teeb trikke </h1>
+      </div>
         <div>
             <p>A tiny green bear (the Trickster) tries his best to impress a group of animals with his annoying tricks.</p>
 
