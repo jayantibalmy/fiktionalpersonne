@@ -154,7 +154,7 @@ body {
 /* film page ---------------------------------------- */
 
 #film-content {
-    padding-top: 20vh;
+    padding-top: 15vh;
     font-family: 'Poiret One', sans-serif;
 }
 
@@ -198,6 +198,13 @@ body {
     }
     #film-content-toggle{
         padding-bottom: 10%;
+    }
+    .yt-vid{
+        width: 100%;
+        height: auto;
+    }
+    .film-cred-vid{
+        padding-bottom: 5rem;
     }
 
 }
@@ -277,7 +284,7 @@ body {
         position: absolute;
         top: 18vh;
     }
-    #contact-content {
+    #contact-content{
         padding-top: 20vh;
     }
 
@@ -324,5 +331,10 @@ body {
         right: 5vw;
         text-align: center;
         text-decoration: underline;
+    }
+
+    .film-cred-vid{
+        display: flex;
+        justify-content: space-between;
     }
 }
